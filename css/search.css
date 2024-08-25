@@ -1,0 +1,211 @@
+.se{
+    background: #000000;
+    height: 100px;
+    width: 200px;
+    max-width: 100px;
+}
+/*--------------HOME------------------*/
+.text2{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.img2{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
+.text1{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    bottom:5px;
+    right:10px;
+    margin: 3px 0px 0px;
+    text-align: left;
+}
+.img1{
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 272px;
+    left: calc(50% - 272px/2);
+    top: 26%;
+    position: absolute;
+}
+.home {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1
+}
+
+.home__logo-container {
+--logo-color: rgba(238,238,238,1);
+font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
+background-image: url(../IMG/BRAVE\ PRIVATE\ EDITION.png
+background-repeat: no-repeat;
+height: 92px;
+width: 272px;
+left: calc(50% - 272px/2);
+top: 26%;
+position: absolute;
+-webkit-mask-image: url(../IMG/BRAVE\ PRIVATE\ EDITION.png);
+background: var(--logo-color);
+}
+
+.home__search-container {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin-top: 21.5%;
+}
+
+.home__form {
+--searchbox-height: 44px;
+background: rgb(255, 253, 253);
+border-radius:  22px;
+box-sizing: border-box;
+font-size: 16px;
+height: var(--searchbox-height);
+position: relative;
+box-shadow: 0 1px 6px 0 rgb(0, 0, 0);
+margin: 0 auto;
+max-width: 564px;
+cursor: text;
+}
+
+.home__form .google-search {
+--searchbox-height: 44px;
+font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
+bottom: 0;
+box-sizing: border-box;
+left: 0;
+opacity: 1;
+position: absolute;
+top: 0;
+width: 92%;
+color: #000;
+border: none;
+font-size: 16px;
+background-color: transparent;
+padding: 0 48px;
+padding-right: 0;
+}
+
+.home__form .fa-search {
+	color: #999;
+	float: left;
+	margin-left: 21px;
+	margin-top: 15px;
+	font-size: 15px
+}
+
+
+
+.form__microphone-icon {
+border: 0;
+background: url(../img/google-microfono.svg) no-repeat center;
+background-size: 21px 21px;
+cursor: pointer;
+padding: 22px 12px 0;
+width: 21px;
+float:right;
+margin-top: 11px;
+margin-right: 16px
+}
+
+/*-------------VOICE-SEARCH-------------*/
+
+
+.voice-search {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: #fff;
+	display: flex;
+	z-index: 99999;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    padding: 0 10vw
+}
+
+
+
+.voice-search__result, .voice-search__animation {
+	height: 100vh;
+	width: 40vw;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.voice-search__result-text {
+	color: #666;
+	font-size: 34px;
+}
+
+.voice-search__microphone-icon {
+	color: #f44;
+	font-size: 80px;
+	height: 180px;
+	width: 180px;
+	background-color: #fff;
+	border-radius: 50%;
+	text-align: center;
+	padding: 50px 0;
+	transition: color .12s, background-color .12s;
+	box-shadow: 1px 1px 5px #ccc
+}
+
+.voice-search__microphone-icon:hover {
+	color: #fff;
+	background-color: #f44;
+}
+
+
+.voice-search__microphone-border {
+	position: absolute;
+	height: 180px;
+	width: 180px;
+	border-radius: 50%;
+	text-align: center;
+	transition: border-width .13s;
+	border: 0 solid #ccc;
+	box-sizing: content-box;
+}
+
+
+
+.voice-search__microphone-border:hover {
+	border-width: 70px;
+}
+
+
+.voice-search__close-modal {
+	position: absolute;
+	font-size: 30px;
+	font-weight: 700;
+	color: #666;
+	top: 12px;
+	right: 30px
+}
+
+@keyframes aparecer {
+	0% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes desaparecer {
+	0% {
+		opacity: 1
+	}
+	100% {
+		opacity: 0;
+	}
+}
